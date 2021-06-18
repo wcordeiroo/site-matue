@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="data:image/png;base64,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">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <title>Matue</title>
+</head>
+
+
+<style>
+    #navbar, #sobre .card-header, #sobre .card-footer{
+    color: white !important;
+    background-color: #7619b4 !important;
+}
+
+#sucesso{
+    background-color:#7619b4;
+    color: white;
+}
+
+#ouca-agora{
+    background-color: #7619b4;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+p b{
+    color: #7619b4;
+
+}
+</style>
+
+
+<body>
+    <!-- Menu -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MATUE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
+                    <a class="nav-link" href="#sucesso">Maior Sucesso</a>
+                    <a class="nav-link" href="#biografia">Biografia</a>
+                    <a class="nav-link" href="https://open.spotify.com/artist/5nP8x4uEFjAAmDzwOEc9b8?si=IC49FmcWR7uHoWWOlV91IA&dl_branch=1">Ouça Agora</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Carosel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://media.discordapp.net/attachments/855213716278607893/855239866686373888/matue-2.jpg" class="d-block w-100" alt="sobre reunida">
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.discordapp.net/attachments/855213716278607893/855239823274934292/26526947.jpg" class="d-block w-100" alt="Mais uma da sobre reunida">
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.discordapp.net/attachments/855213716278607893/855239838680875048/maxresdefault.jpg?width=1191&height=670"
+                    class="d-block w-100" alt="Outra da sobre reunida">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    <!-- a sobre -->
+    <div class="container mt-5 mb-5" id="sobre">
+        <div class="card text-center">
+            <div class="card-header">
+                Sobre
+            </div>
+            <div class="card-body p-5">
+                <h3 class="card-title">Matue</h3>
+                <p class="card-text">Matuê destacou-se na cena nacional já no seu primeiro lançamento no gênero trap, “RBN”, no final de 2016. Sua estreia contou com um clipe de estética ímpar e enorme originalidade musical, o tornando característico pelo seu estilo harmônico vocal. Anterior ele fazia músicas de reggae, porém sem muito sucesso. A mais popular na época foi Cidade 2000.</p>
+                <p class="card-text p-5">
+                    Desde então, o artista e diretor criativo de seu selo 30PRAUM tem inovado a cada release, superando suas produções anteriores e trazendo novas sonoridades. Sempre apresentando uma variedade de flows e harmonias, diferenciando a cada música mas sem perder a originalidade e qualidade. Matuê tem 3,5 milhões de ouvintes mensais no Spotify, seu álbum "Máquina do Tempo" já passa de 110 milhões de visualizações no YouTube em uma semana. Seu principal hit de 2019 "Kenny G" já conta com 175 milhões de visualizações</p>
+                <a href="https://www.instagram.com/matue30/?hl=pt-br" style="color: #7619b4">Instagram Oficial</a>
+            </div>
+            <div class="card-footer text-muted">
+                João e Weliton
+            </div>
+        </div>
+    </div>
+    <!-- História -->
+    <div id="sucesso">
+        <div class="container pt-5 pb-5">
+            <iframe class="ratio ratio-16x9" width="1100" height="825" src="https://www.youtube.com/watch?v=b-PhvPKgWjY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- biografias -->
+    <div class="container mt-5" id="biografia">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="https://media.discordapp.net/attachments/855213716278607893/855239800034426922/Design_sem_nome.png?width=670&height=670"
+                        alt="Foto do dinho">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Matheus Brasileiro Aguiar</h5>
+                        <p class="card-text">Nasceu em Fortaleza, no Ceará, em 11 de outubro de 1993, mais conhecido como Matuê, é um rapper brasileiro. Ficou conhecido com o single "Anos Luz", lançado em 2017. É considerado um dos maiores nomes do trap brasileiro.</p>
+                        <p class="card-text"><small class="text-muted">Atualizado a 1 dia atrás</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <div id="ouca-agora">
+        <div class="container p-5">
+            <p class="text-center">
+                Site desenvolvido para o Rapper Matue pelos acadêmicos João Zeni e Weliton Cordeiro do curso de Design Gráfico na disciplina de Design de
+                Interface/2021 
+                        </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
